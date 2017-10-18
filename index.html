@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/home/reshma/Documents/AcadGild/Web_Fundamentals/Session-8_11Oct2017/Assignment-1/style.css">
+	<script src="/home/reshma/Documents/AcadGild/Web_Fundamentals/Session-8_11Oct2017/Assignment-1/script.js"></script>
+	<title>S-8 Assignment-1</title>
+</head>
+
+<body>
+	<!-- Create student login and registration form -->
+
+	<h1 style="margin-left: 60px">Enter Student Information</h1><br>
+	<h5 style="margin-left: 60px">It is necessary to login to your account to sign-up for a course.</h5><br><br>
+
+	<!-- Using bootstrap -->
+	<!-- Our main div that holds all of our main content -->
+	<div class="container-fluid col-sm-11 col-md-11 vertical-center">
+
+		<!-- Div holding reistration form -->
+		<div class="col-sm-5 col-md-5" id="regDiv">
+			<!-- Registration form -->
+			<form role="form" id="reg">
+				<h4 style="font-weight: bold;">ARE YOU NEW? <span style="color: #3519A8">REGISTER</span></h4>
+				<br>
+				<!-- All input fields for registration ~~~Start~~~ -->
+				<div class="form-group">
+					<label>Name:</label>
+					<input type="text" name="name" id="name" class="form-control input-sm" placeholder="User name" required>
+				</div>
+				<div class="form-group">
+					<label>Email:</label>
+					<input type="Email" name="email" id="email" class="form-control input-sm" placeholder="Enter a valid e-mail address" required>
+				</div>
+				<div class="form-group">
+					<label>Password:</label>
+					<input type="password" name="pwd" id="pwd" class="form-control input-sm" placeholder="Enter password of your choice" required>
+				</div>
+				<div class="form-group">
+					<label>Confirm Password:</label>
+					<input type="password" name="cpwd" id="cpwd" class="form-control input-sm" placeholder="Re-enter password to confirm" required>
+				</div>
+				<div class="form-group">
+					<button id="signup" class="btn btn-primary" style="float: right;">Register</button>
+				</div>
+				<!-- All input fields for registration ~~~End~~~ -->
+			</form>	
+		</div>		
+
+		<!-- Div holding login form -->
+		<div class="col-sm-6 col-md-6" id="loginDiv" style="float: right;">
+			<!-- Login form -->
+			<form role="form" id="login">
+				<h4 style="font-weight: bold;">ALREADY A STUDENT? <span style="color: #3519A8">LOGIN</span></h4>
+				<br>
+				<!-- All input fields for login ~~~Start~~~ -->
+				<div class="form-group">
+					<label>User Name:</label>
+					<input type="text" name="uname" id="uname" class="form-control input-sm" placeholder="User name" required>
+				</div>
+				<div class="form-group">
+					<label>Password:</label>
+					<input type="password" name="pwd" id="pwd" class="form-control input-sm" placeholder="Enter password of your choice" required>
+				</div>
+				<div class="form-group">
+					<input type="checkbox" name="rememberMe" value="rememberMe"><label>&nbsp;&nbsp;Remember Me</label>
+				</div>
+				<div class="form-group">
+					<button id="login" class="btn btn-primary" style="float: right;">Login</button>
+				</div>
+				<br><br><br>
+				<div class="form-group">
+					<a href="#" style="float: right;text-decoration: underline;">Forgot Password?</a>
+				</div>
+				<!-- All input fields for login ~~~End~~~ -->
+			</form>	
+		</div>	
+	</div>
+</body>
+</html>
